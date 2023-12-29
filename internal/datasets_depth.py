@@ -1386,7 +1386,7 @@ class DTU(Dataset):
         len(utils.listdir(self.data_dir)) // 8)
 
     # depth_path = "./depth_midas_temp/DTU/"
-    depth_path = "/mnt/lustre/gcwang/datasets/DTU/depth_midas_temp_DPT_Hybrid/DTU/" 
+    depth_path = "/data2/wlsgur4011/FreeNeRF/data/nerf_data/DTU/depth_midas_temp_DPT_Hybrid/DTU/" 
     # Loop over all images.
     for i in range(1, n_images + 1):
       # Set light condition string accordingly.

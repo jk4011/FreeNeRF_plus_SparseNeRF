@@ -54,7 +54,7 @@ def main(unused_argv):
   config = configs.load_config(save_config=False)
   if config.use_wandb:
     import wandb
-    wandb.init(project=config.project, entity=config.entity, sync_tensorboard=True)
+    wandb.init(project=config.project, sync_tensorboard=True)
     wandb.run.name = config.expname
     wandb.run.save()
     wandb.config.update(config)

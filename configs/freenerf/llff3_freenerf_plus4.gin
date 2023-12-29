@@ -1,10 +1,9 @@
-
-Config.expname = "myexp_rank_leaves"
-Config.checkpoint_dir = "out/myexp_rank_leaves"
+Config.group = "free_sparsenerf"
+Config.expname = "free_sparsenerf_llff3"
 Config.llff_scan = "leaves"
 
 # basic configs
-Config.data_dir = "/mnt/lustre/gcwang/datasets/nerf_llff_data/"
+Config.data_dir = "/data2/wlsgur4011/FreeNeRF/data/nerf_data/nerf_llff_data/"
 Config.dataset_loader = 'llff'
 Config.white_background = False
 Config.near = 0

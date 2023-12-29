@@ -286,11 +286,12 @@ def main(unused_argv):
   if config.use_wandb:
     import wandb
     while wandb.init(
-      project=config.project, 
-      entity=config.entity, 
+      project="nerf",
+      group=config.group,
+      # entity=config.entity, 
       sync_tensorboard=True) is not wandb.run:
       continue
-    wandb.run.name = config.expname
+    wandb.run.name = f"{config.llff_scan}_{config.project}"
     wandb.run.save()
     wandb.config.update(config)
   ## ---------------------------- ##
